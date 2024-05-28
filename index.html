@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>SkyeWave</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="" name="keywords" />
+    <meta content="" name="description" />
+
+    <!-- Favicon -->
+    <link href="img/favicon.svg" rel="icon" />
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Icon Font Stylesheet -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet" />
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+    <link
+      href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div class="bg-white p-0">
+      <!-- Spinner Start -->
+      <div
+        id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center"
+      >
+        <div
+          class="spinner-border text-primary"
+          style="width: 3rem; height: 3rem"
+          role="status"
+        >
+          <span class="sr-only">Loading...</span>
+        </div>
+      </div>
+      <!-- Spinner End -->
+
+      <!-- Header Start -->
+      <div class="container-fluid bg-dark px-0">
+        <div class="row gx-0">
+          <div class="col-lg-5 bg-dark d-none d-lg-block">
+            <a
+              href="index.html"
+              class="navbar-brand w-100 h-100 m-0 p-0 d-flex align-items-center justify-content-center"
+            >
+              <img src="./img/Logo.svg" alt="" />
+            </a>
+          </div>
+          <div class="col-lg-7">
+            <nav class="navbar navbar-expand-lg bg-dark navbar-dark p-3 p-lg-0">
+              <a href="index.html" class="navbar-brand d-block d-lg-none">
+                <img src="./img/Logo.svg" alt="" />
+              </a>
+              <button
+                type="button"
+                class="navbar-toggler"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarCollapse"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div
+                class="collapse navbar-collapse justify-content-between"
+                id="navbarCollapse"
+              >
+                <div class="navbar-nav mr-auto py-0">
+                  <a href="index.html" class="nav-item nav-link active"
+                    >Main page</a
+                  >
+                  <a href="#about" class="nav-item nav-link">About us</a>
+                  <a href="#blog" class="nav-item nav-link">Blog</a>
+                  <a href="#reviews" class="nav-item nav-link">Reviews</a>
+                  <a href="#contact" class="nav-item nav-link">Contacts</a>
+                </div>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <!-- Header End -->
+
+      <!-- Carousel Start -->
+      <div class="container-fluid p-0 mb-5">
+        <div
+          id="header-carousel"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img class="w-100" src="img/carousel-1.jpg" alt="Image" />
+              <div
+                class="carousel-caption d-flex flex-column align-items-center justify-content-center"
+              >
+                <div class="p-3" style="max-width: 700px">
+                  <h6
+                    class="section-title text-white text-uppercase mb-3 animated slideInDown"
+                  >
+                    SkyeWave
+                  </h6>
+                  <h1 class="display-3 text-white mb-4 animated slideInDown">
+                    Benefits of our consulting services
+                  </h1>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img class="w-100" src="img/carousel-2.jpg" alt="Image" />
+              <div
+                class="carousel-caption d-flex flex-column align-items-center justify-content-center"
+              >
+                <div class="p-3" style="max-width: 700px">
+                  <h6
+                    class="section-title text-white text-uppercase mb-3 animated slideInDown"
+                  >
+                    SkyeWave
+                  </h6>
+                  <h1 class="display-3 text-white mb-4 animated slideInDown">
+                    Expert advice for your success
+                  </h1>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#header-carousel"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#header-carousel"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+      <!-- Carousel End -->
+
+      <!-- About Start -->
+      <div id="about" class="container-xxl py-5">
+        <div class="container">
+          <div class="row g-5 align-items-center">
+            <div class="col-lg-6">
+              <h2 class="section-title text-start text-primary text-uppercase">
+                About us
+              </h2>
+              <p class="mb-4">
+                We are a leading consulting company specializing in providing
+                high quality business solutions and strategic consultations. Our
+                team consists of experienced professionals with deep knowledge
+                and practical skills in various industries. We help our clients
+                achieve their goals by offering individual approaches and
+                innovative strategies. Our mission is to promote success our
+                clients, providing them with advanced tools and methods for
+                optimizing business processes, increasing efficiency and growth.
+              </p>
+            </div>
+            <div class="col-lg-6">
+              <div class="row g-3">
+                <div class="col-6 text-end">
+                  <img
+                    class="img-fluid rounded w-75 wow zoomIn"
+                    data-wow-delay="0.1s"
+                    src="img/about-1.jpg"
+                    style="margin-top: 25%"
+                  />
+                </div>
+                <div class="col-6 text-end">
+                  <img
+                    class="img-fluid rounded w-100 wow zoomIn"
+                    data-wow-delay="0.3s"
+                    src="img/about-2.jpg"
+                  />
+                </div>
+                <div class="col-6 text-end">
+                  <img
+                    class="img-fluid rounded w-100 wow zoomIn"
+                    data-wow-delay="0.3s"
+                    src="img/about-3.jpg"
+                  />
+                </div>
+                <div class="col-6 text-start">
+                  <img
+                    class="img-fluid rounded w-75 wow zoomIn"
+                    data-wow-delay="0.7s"
+                    src="img/about-4.jpg"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- About End -->
+
+      <!-- Team Start -->
+      <div
+        style="margin-bottom: 120px"
+        class="container-xxl py-5 team-container"
+      >
+        <div class="container">
+          <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+            <h2 class="section-title text-center text-primary text-uppercase">
+              OUR TEAM
+            </h2>
+            <h6 class="mb-5">Meet our staff</h6>
+          </div>
+          <div class="row g-4">
+            <div
+              class="col-lg-3 col-md-6 wow fadeInUp team-itemmy"
+              data-wow-delay="0.1s"
+            >
+              <div class="rounded shadow overflow-hidden">
+                <div class="position-relative">
+                  <img class="img-fluid" src="img/team-1.jpg" alt="" />
+                </div>
+                <div class="text-center p-4 mt-3">
+                  <h5 class="fw-bold mb-0">Ioan Bocharov</h5>
+                  <small>Investment consultant</small>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-lg-3 col-md-6 wow fadeInUp team-itemmy"
+              data-wow-delay="0.3s"
+            >
+              <div class="rounded shadow overflow-hidden">
+                <div class="position-relative">
+                  <img class="img-fluid" src="img/team-2.jpg" alt="" />
+                </div>
+                <div class="text-center p-4 mt-3">
+                  <h5 class="fw-bold mb-0">Dana Golodyay</h5>
+                  <small>Portfolio Management Expert</small>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-lg-3 col-md-6 wow fadeInUp team-itemmy"
+              data-wow-delay="0.5s"
+            >
+              <div class="rounded shadow overflow-hidden">
+                <div class="position-relative">
+                  <img class="img-fluid" src="img/team-3.jpg" alt="" />
+                </div>
+                <div class="text-center p-4 mt-3">
+                  <h5 class="fw-bold mb-0">Mila Dobrovolska</h5>
+                  <small>Investment consultant</small>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-lg-3 col-md-6 wow fadeInUp team-itemmy"
+              data-wow-delay="0.7s"
+            >
+              <div class="rounded shadow overflow-hidden">
+                <div class="position-relative">
+                  <img class="img-fluid" src="img/team-4.jpg" alt="" />
+                </div>
+                <div class="text-center p-4 mt-3">
+                  <h5 class="fw-bold mb-0">Alexa Tokareva</h5>
+                  <small>Portfolio manager</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Team End -->
+      <!-- Blog Start -->
+      <div id="blog" style="margin-bottom: 120px" class="container-xxl py-5">
+        <div class="container">
+          <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+            <h2
+              class="section-title text-center text-primary text-uppercase mb-5"
+            >
+              Get to know our services
+            </h2>
+          </div>
+          <div class="row g-4">
+            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+              <div class="rounded border overflow-hidden">
+                <div class="position-relative">
+                  <img class="img-fluid" src="img/blog-1.jpg" alt="" />
+                </div>
+                <div class="text-center p-4 mt-2">
+                  <h5 class="fw-bold mb-2 text-primary">
+                    Adaptation of business to changing market conditions
+                  </h5>
+                  <small
+                    >Find out how to quickly and efficiently adapt your business
+                    to changes in the market. Our tips will help you stay on
+                    track step ahead of competitors and seize new opportunities
+                    for growth.</small
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+              <div class="rounded border overflow-hidden">
+                <div class="position-relative">
+                  <img class="img-fluid" src="img/blog-2.jpg" alt="" />
+                </div>
+                <div class="text-center p-4 mt-2">
+                  <h5 class="fw-bold mb-2 text-primary">
+                    Introduction of digital technologies into business
+                  </h5>
+                  <small
+                    >Benefits and challenges of digital transformation for your
+                    business. Read about how to properly implement modern
+                    technology to improve efficiency and competitiveness.</small
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+              <div class="rounded border overflow-hidden">
+                <div class="position-relative">
+                  <img class="img-fluid" src="img/blog-3.jpg" alt="" />
+                </div>
+                <div class="text-center p-4 mt-2">
+                  <h5 class="fw-bold mb-2 text-primary">
+                    Strategies for sustainable business development
+                  </h5>
+                  <small
+                    >Developing strategies aimed at long-term and sustainable
+                    development. In this article you will find tips on creating
+                    a sustainable business model that can withstand any market
+                    changes.</small
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
+              <div class="rounded border overflow-hidden">
+                <div class="position-relative">
+                  <img class="img-fluid" src="img/blog-4.jpg" alt="" />
+                </div>
+                <div class="text-center p-4 mt-2">
+                  <h5 class="fw-bold mb-2 text-primary">
+                    Optimization of management processes
+                  </h5>
+                  <small
+                    >How to improve management processes to improve overall
+                    company performance. We will tell you about the best
+                    practices and tools for optimizing business
+                    management.</small
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
+              <div class="rounded border overflow-hidden">
+                <div class="position-relative">
+                  <img class="img-fluid" src="img/blog-5.jpg" alt="" />
+                </div>
+                <div class="text-center p-4 mt-2">
+                  <h5 class="fw-bold mb-2 text-primary">
+                    The Role of Leadership in a Successful Business
+                  </h5>
+                  <small
+                    >Explore how effective leadership can contribute success of
+                    your business. Learn about the key qualities of leaders and
+                    how to develop these skills in yourself and your
+                    teams.</small
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
+              <div class="rounded border overflow-hidden">
+                <div class="position-relative">
+                  <img class="img-fluid" src="img/blog-6.jpg" alt="" />
+                </div>
+                <div class="text-center p-4 mt-2">
+                  <h5 class="fw-bold mb-2 text-primary">
+                    Risk management in modern conditions
+                  </h5>
+                  <small
+                    >Risk management strategies to help protect your business in
+                    conditions of uncertainty. This article suggests practical
+                    advice on identifying, assessing and minimizing
+                    risks.</small
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Blog End -->
+      <!-- Service Start -->
+      <div id="service" style="margin-bottom: 120px" class="container-xxl py-5">
+        <div class="container">
+          <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+            <h2
+              class="section-title text-center text-primary text-uppercase mb-5"
+            >
+              Our advantages
+            </h2>
+          </div>
+          <div class="row g-4">
+            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+              <a class="service-item rounded" href="">
+                <div class="service-icon bg-transparent rounded p-1">
+                  <div
+                    class="w-100 h-100 d-flex align-items-center justify-content-center"
+                  >
+                    <img
+                      src="./img/lock-hashtag.svg"
+                      alt=""
+                      style="width: 54px; height: 54px"
+                    />
+                  </div>
+                </div>
+                <h5 class="mb-3">Business Analysis</h5>
+                <p class="text-body mb-0">
+                  Deep analysis of the current state of your business for
+                  identifying strengths and weaknesses, as well as opportunities
+                  for improvements. Our experts will help you understand where
+                  you are and how to achieve your goals.
+                </p>
+              </a>
+            </div>
+            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
+              <a class="service-item rounded" href="">
+                <div class="service-icon bg-transparent rounded p-1">
+                  <div
+                    class="w-100 h-100 d-flex align-items-center justify-content-center"
+                  >
+                    <img
+                      src="./img/crown.svg"
+                      alt=""
+                      style="width: 54px; height: 54px"
+                    />
+                  </div>
+                </div>
+                <h5 class="mb-3">Strategic planning</h5>
+                <p class="text-body mb-0">
+                  Developing long-term strategies that will allow your business
+                  to achieve sustainable growth and success. We will help you
+                  identify priorities and develop effective plans actions.
+                </p>
+              </a>
+            </div>
+            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+              <a class="service-item rounded" href="">
+                <div class="service-icon bg-transparent rounded p-1">
+                  <div
+                    class="w-100 h-100 d-flex align-items-center justify-content-center"
+                  >
+                    <img
+                      src="./img/file-shield.svg"
+                      alt=""
+                      style="width: 54px; height: 54px"
+                    />
+                  </div>
+                </div>
+                <h5 class="mb-3">Process optimization</h5>
+                <p class="text-body mb-0">
+                  Increase the efficiency and productivity of your business in
+                  by optimizing key processes. We will introduce advanced
+                  techniques and tools to improve the operating room activities.
+                </p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Service End -->
+
+      <!-- Testimonial Start -->
+      <div
+        class="container-xxl testimonial my-5 py-5 bg-dark wow zoomIn"
+        data-wow-delay="0.1s"
+        id="reviews"
+      >
+        <div class="container">
+          <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+            <h2 class="section-title text-center text-white text-uppercase">
+              Call our clients
+            </h2>
+          </div>
+          <div class="owl-carousel testimonial-carousel py-5">
+            <div
+              class="testimonial-item position-relative bg-white rounded overflow-hidden"
+            >
+              <div class="d-flex align-items-center">
+                <img
+                  class="img-fluid flex-shrink-0 rounded"
+                  src="img/testimonial-1.jpg"
+                  style="width: 45px; height: 45px; margin-bottom: 20px"
+                />
+                <div class="ps-3">
+                  <h6 class="fw-bold mb-1">Tim D.</h6>
+                </div>
+              </div>
+              <p>
+                Thank you for your professional help in managing my investment
+                portfolio. Your investment advisor developed individual
+                strategies for me that helped I need to achieve financial
+                independence. Thanks to your advice I I now feel more confident
+                in my investment decisions.
+              </p>
+            </div>
+            <div
+              class="testimonial-item position-relative bg-white rounded overflow-hidden"
+            >
+              <div class="d-flex align-items-center">
+                <img
+                  class="img-fluid flex-shrink-0 rounded"
+                  src="img/testimonial-2.jpg"
+                  style="width: 45px; height: 45px; margin-bottom: 20px"
+                />
+                <div class="ps-3">
+                  <h6 class="fw-bold mb-1">Mila K.</h6>
+                </div>
+              </div>
+              <p>
+                I received excellent help from your investment planner. He
+                developed long-term investment strategies for me, given my
+                financial goals and risk profile. Now I I feel more confident in
+                my investment decisions and I am confident that I am moving
+                towards financial independence.
+              </p>
+            </div>
+            <div
+              class="testimonial-item position-relative bg-white rounded overflow-hidden"
+            >
+              <div class="d-flex align-items-center">
+                <img
+                  class="img-fluid flex-shrink-0 rounded"
+                  src="img/testimonial-3.jpg"
+                  style="width: 45px; height: 45px; margin-bottom: 20px"
+                />
+                <div class="ps-3">
+                  <h6 class="fw-bold mb-1">Vila F.</h6>
+                </div>
+              </div>
+              <p>
+                I am very pleased with your online investment advice. To me it
+                was very convenient to receive professional help without leaving
+                Houses. Thanks to your investment advisor, I learned effectively
+                manage your investment portfolio and make money from home.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Testimonial End -->
+
+      <!-- Contact Start -->
+      <div id="contact" style="margin-bottom: 120px" class="container-xxl py-5">
+        <div class="container">
+          <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+            <h2 class="section-title text-center text-primary text-uppercase">
+              Contacts
+            </h2>
+            <h6 class="mb-5">Don't hesitate to contact us!</h6>
+          </div>
+          <div class="row g-4">
+            <div class="col-md-6 wow fadeIn" data-wow-delay="0.1s">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6528.662024635329!2d76.87160396210649!3d43.205538985770964!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x388368f5305c1859%3A0x551a35231236e83d!2z0J7QndCQ0JkgLSAx0Lkg0KbQtdC90YLRgCDQvtCx0YHQu9GD0LbQuNCy0LDQvdC40Y8!5e0!3m2!1sru!2sua!4v1716035012464!5m2!1sru!2sua"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                style="min-height: 350px; border: 0"
+                class="position-relative rounded w-100 h-100"
+              ></iframe>
+            </div>
+            <div class="col-md-6">
+              <div class="wow fadeInUp" data-wow-delay="0.2s">
+                <form>
+                  <div class="row g-3">
+                    <div class="col-md-6">
+                      <div class="form-floating">
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="name"
+                          placeholder="Your Name"
+                        />
+                        <label for="name">Your name</label>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-floating">
+                        <input
+                          type="email"
+                          class="form-control"
+                          id="email"
+                          placeholder="Your Email"
+                        />
+                        <label for="email">Your Email</label>
+                        <div id="result" style="color: red"></div>
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <div class="form-floating">
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="subject"
+                          placeholder="Subject"
+                        />
+                        <label for="subject"> Subject</label>
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <div class="form-floating">
+                        <textarea
+                          class="form-control"
+                          placeholder="Оставьте здесь ваше сообщение"
+                          id="message"
+                          style="height: 150px"
+                        ></textarea>
+                        <label for="message">Message</label>
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <button
+                        id="submit"
+                        onclick="sendForm()"
+                        class="btn btn-primary w-100 py-3"
+                        type="submit"
+                      >
+                        Send a message
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Contact End -->
+
+      <!-- Footer Start -->
+      <div
+        class="container-fluid bg-dark text-light footer wow fadeIn"
+        data-wow-delay="0.1s"
+      >
+        <div class="container pb-5">
+          <div class="row g-5">
+            <div class="col-md-6 col-lg-4">
+              <div class="rounded p-4">
+                <img src="./img/Logo.svg" alt="" />
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <h6
+                class="section-title text-start text-primary text-uppercase mb-4"
+              >
+                Contacts
+              </h6>
+              <p class="mb-2">
+                <i class="fa fa-map-marker-alt me-3"></i>Ryskulbekov street
+                98/8, Almaty 050893, Kazakhstan
+              </p>
+              <p class="mb-2">
+                <i class="fa fa-phone-alt me-3"></i>+77223980190
+              </p>
+              <p class="mb-2">
+                <i class="fa fa-envelope me-3"></i>skyewave@gmail.com
+              </p>
+            </div>
+            <div class="col-lg-4 col-md-12">
+              <div class="row gy-5 g-4">
+                <div class="col-md-6">
+                  <h6
+                    class="section-title text-start text-primary text-uppercase mb-4"
+                  >
+                    Company
+                  </h6>
+                  <a class="btn btn-link" href="index.html">Main page</a>
+                  <a class="btn btn-link" href="#contact">Contact us</a>
+                  <a class="btn btn-link" href="privacy-policy.html">
+                    Privacy Policy</a
+                  >
+                  <a class="btn btn-link" href="terms-of-use.html"
+                    >Terms and Conditions</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Footer End -->
+
+      <!-- Cookie banner -->
+      <div class="cookie-wrapper show">
+        <div>
+          <i class="bx bx-cookie"></i>
+          <h2 style="text-align: center">Consent to the use of cookies</h2>
+        </div>
+        <div class="data">
+          <p>
+            This website uses cookies to provide you with a better experience.
+            high-quality and relevant browsing experience on the site.
+          </p>
+        </div>
+
+        <div class="buttons">
+          <button class="cookie-button" id="acceptBtn">Accept</button>
+          <button class="cookie-button" id="declineBtn">
+            Reject</button>
+        </div>
+      </div>
+      <!-- End Cookie banner -->
+
+      <!-- Back to Top -->
+      <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"
+        ><i class="bi bi-arrow-up"></i
+      ></a>
+    </div>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/tempusdominus/js/moment.min.js"></script>
+    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+    <script src="js/contact-form.js"></script>
+    <script src="js/cookiebanner.js"></script>
+  </body>
+</html>
